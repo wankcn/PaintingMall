@@ -1,0 +1,224 @@
+/*将所有的距离，间距都设置为0*/
+*{
+	padding: 0px;
+	margin: 0px;
+}
+body{
+	background-color: #F5F5F5 /*白烟色*/
+}
+/*--------------------logo,menu,login区域设计--------------------*/
+/*设置页眉的位置*/
+.header{
+	width: 1200px;
+	margin: 25px auto; /*注意空格分开而不是逗号*/
+}
+
+/*子菜单不显示*/
+.header .menu ul{
+	display: none; 
+	list-style: none; /*去点*/
+	/*关联banner布局*/
+	position: absolute;
+	width: 80px;  
+	opacity: 0.5; /*透明效果*/
+	background-color: white;
+}
+
+/*设置菜单和logo位置*/
+.header .logo{
+	float: left;
+	position: relative;
+}
+/*菜单位置*/
+.header .menu{
+	float: left;
+	position: relative;
+	margin-top: 12px;
+	margin-left: 16px; 
+}
+/*menu浮动事件 菜单折叠*/
+/*.header .menu:hover ul{
+	display: block;
+}*/
+/*---------------菜单样式设置---------------*/
+/*菜单间距*/
+.header .menu ul li{
+	margin-top: 20px; 
+	text-align: center; /*和菜单标题同时居中*/
+}
+/*菜单边框*/
+.header .menu .menu_title{
+	border-bottom: 1px solid black;
+	padding-bottom: 20px;
+	width: 80px;
+	text-align: center;
+}
+/*超级链接去下划线*/
+a{
+	text-decoration: none;
+}
+/*---------------login样式设置---------------*/
+.header .auth{
+	float: right;
+}
+.header .auth ul li{
+	float: left;
+	margin-right: 70px;
+	margin-top: 12px;    /*上边距*/
+	list-style: none;
+}
+
+/*--------------------正文区域设计--------------------*/
+/*---------------banner样式---------------*/
+.content{
+	/*响应式布局始终居中*/
+	width: 1200px;
+	margin: 25px auto;
+}
+/*图片距离*/
+.content .banner .banner_img{
+	margin-top: 20px;
+}
+/*---------------正文图片样式---------------*/
+/*整体图片横向布局*/
+.content .img_content ul{
+	width: 1280px;
+}
+.content .img_content ul li{
+	width: 360px;  /*360*3+120*/
+	float: left;
+	margin: 0 60px 60px 0; 
+	list-style: none;
+	background-color: #FFFFFF;
+	/*处理边框*/
+	margin-top: 30px;
+	height: 500px; /*列表边框*/
+	/*阴影位置， 垂直阴影位置，渐变距离，阴影尺寸，阴影颜色*/
+	/*box-shadow: 0 0 5px 3px #ccc */
+	/*浏览器兼容*/
+	-webkit-box-shadow: 0 0 5px 3px #ccc; /*谷歌浏览器*/
+	-moz-box-shadow: 0 0 5px 3px #ccc; /*火狐浏览器*/
+}
+/*标题设置*/
+.content .img_content .info h3{
+	font-size: 25px;
+	color: red;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+/*图片的段落信息设置*/
+.content .img_content .info p{
+	line-height: 25px;
+	/*加一个下边距和价格隔开*/
+	margin-bottom: 10px;
+}
+.content .img_content .info{
+	margin-left: 30px;
+	margin-right: 30px;
+}
+/*价格样式*/
+.content .img_content .info .img_btn .price{
+	color: red;
+	font-size: 20px;
+}
+
+/*购物车设置*/
+.content .img_content .info .img_btn{
+	width: 300px;
+}
+.content .img_content .info .img_btn .btn{
+	width: 60px;
+	height: 30px;
+	background-color: red;
+	text-align: center;
+	border-radius: 5px; /*圆角矩形*/
+	float: right;
+}
+.content .img_content .info .img_btn .btn .cart img{
+	width: 60px;
+	height: 20px;
+	margin-top: 5px;
+
+}
+.content .img_content .info .img_btn .price{
+	float: left;
+}
+/*页码导航栏*/
+.content .page_nav{
+	width: 100%; /*大小不超出content*/
+	height: 60px;
+	line-height: 60px;
+	/*border: 1px solid black;*/
+	/*溢出处理*/
+	overflow:hidden;
+}
+.content .page_nav ul li{
+	float: left;
+	margin-right: 20px;
+	list-style: none; 
+}
+.content .page_nav ul{
+	width: 500px;
+	margin: auto;
+	overflow:hidden;
+}
+/*第一页设置背景圆*/
+.content .page_nav .first_page{
+	border-radius: 50%;
+	background-color: #c5c5c5;
+	padding: 3px 9px; /*圆心内部边距把圆撑起来*/ 
+}
+
+/*-------------------------页脚区域设计-------------------------*/
+.footer{
+	width: 1200px;
+	height: 100px;
+	margin: 60px auto;
+	/*加一条上边框分割线*/
+	border-top:1px solid #ccc;
+	overflow: hidden; 
+}
+.footer p{
+	text-align: center;
+	line-height: 80px;
+}	
+.footer p span{
+	color: #ff1490;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
