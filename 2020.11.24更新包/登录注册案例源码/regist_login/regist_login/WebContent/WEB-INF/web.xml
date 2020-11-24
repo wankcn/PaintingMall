@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+ 
+ <servlet>
+ 	<servlet-name>KaptchaServlet</servlet-name>
+ 	<servlet-class>com.google.code.kaptcha.servlet.KaptchaServlet</servlet-class>
+ 
+ 	<!-- 修改随机的字母或数字的长度 -->
+ 	<init-param>
+ 		<param-name>kaptcha.textproducer.char.length</param-name>
+ 		<param-value>4</param-value>
+ 	</init-param>
+ 	
+ 	<!-- 修改字体大小 -->
+ 	<init-param>
+ 		<param-name>kaptcha.textproducer.font.size</param-name>
+ 		<param-value>25</param-value>
+ 	</init-param>
+ 	<init-param>
+ 		<param-name>kaptcha.textproducer.char.space</param-name>
+ 		<param-value>10</param-value>
+ 	</init-param>
+ 	
+ 	<!-- 修改图片的宽高 -->
+ 	<init-param>
+ 		<param-name>kaptcha.image.width</param-name>
+ 		<param-value>120</param-value>
+ 	</init-param>
+ 	<init-param>
+ 		<param-name>kaptcha.image.height</param-name>
+ 		<param-value>30</param-value>
+ 	</init-param>
+ </servlet>
+ 
+ <servlet-mapping>
+ 	<servlet-name>KaptchaServlet</servlet-name>
+ 	<url-pattern>/KaptchaServlet</url-pattern>
+ </servlet-mapping>
+ 
+ 
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
